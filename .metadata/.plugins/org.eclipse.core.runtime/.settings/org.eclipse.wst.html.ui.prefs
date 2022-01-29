@@ -1,0 +1,20 @@
+commentBorder=\#C7DD0C | null | true | false | false | false
+commentText=\#ccfc25 | null | true | false | false | false
+declBoder=\#FFFFFF | null | true | false | false | false
+doctypeExternalId=\#FFFFFF | null | true | false | false | false
+doctypeExternalPubref=\#ffff00 | null | true | false | false | false
+doctypeExtrenalSysref=\#ffff00 | null | true | false | false | false
+doctypeName=\#ffff00 | null | true | false | false | false
+eclipse.preferences.version=1
+entityReference=\#8DCBE2 | null | true | false | false | false
+html_content_assist_default_page_sort_order=org.eclipse.wst.html.ui.proposalCategory.htmlTags\u0000org.eclipse.wst.html.ui.proposalCategory.generic\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.html.ui.proposalCategory.htmlTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000
+html_content_assist_display_on_default_page=org.eclipse.wst.html.ui.proposalCategory.generic\u0000
+html_content_assist_own_page_sort_order=org.eclipse.wst.html.ui.proposalCategory.htmlTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000org.eclipse.wst.html.ui.proposalCategory.htmlTags\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.html.ui.proposalCategory.generic\u0000
+newFileTemplateName=New HTML File (5)
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+tagAttributeEquals=\#D8D8D8 | null | true | false | false | false
+tagAttributeName=\#ff80ff | null | true | false | false | false
+tagAttributeValue=\#ffff00 | null | true | false | false | false
+tagBorder=\#79ABFF | null | true | false | false | false
+tagName=\#81f8fe | null | true | false | false | false
+xmlContent=\#c9f5a0 | null | true | false | false | false
