@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head th:insert="layout::head">
-<meta charset="UTF-8">
-</head>
-<body>
-	<>
-</body>
-</html>

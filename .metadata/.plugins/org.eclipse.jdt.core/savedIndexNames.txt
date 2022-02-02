@@ -1,14 +1,2 @@
 INDEX VERSION 1.131+D:\IDAT\CICLO 4\DESARROLLO APL 2\Ejercicios\.metadata\.plugins\org.eclipse.jdt.core
-3556766716.index
-2823940872.index
-92900217.index
-3149763674.index
-750657815.index
-3608293747.index
-2409981686.index
-602699869.index
-538152998.index
-2930518100.index
 1865797976.index
-3443191618.index
-3077940244.index
