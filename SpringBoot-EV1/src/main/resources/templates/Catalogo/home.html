@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head th:insert="layout::head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<nav th:insert="layout::menuFarma"></nav>
+
+	<br>
+
+	<!-- Colar direccion a Facturacion <a th:href="@{/Facturacion/Operacion}">Direccionar</a>
+	-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4" th:each="pro :${producto}">
+				
+				<div class="card" style="width: 18rem;">
+					<img th:src="${pro.imagen_producto}" class="card-img-top">
+					<div class="card-body">
+						<h5 class="card-title" th:text="${pro.nombre_producto}"></h5>
+						<p class="card-text" th:text="${pro.nombreMarca}"></p>
+						<p class="card-text" th:text="${pro.precio}"></p>
+						<button type="button" class="btn btn-warning btnagregarmedicamento"
+								th:data-codpro="${pro.id_producto}"
+								th:data-imgpro="${pro.imagen_producto}"
+								th:data-nompro="${pro.nombre_producto}"
+								th:data-prescpro="${pro.prescripcion}"
+								th:data-presepro="${pro.presentacion}"
+								th:data-precpro="${pro.precio}"
+								th:data-precunpro="${pro.precio_unitario}"
+								th:data-stockpro="${pro.stock}"
+								th:data-valpro="${pro.is_active}"
+								th:data-codcat="${pro.id_categoria_producto}"
+								th:data-nomcat="${pro.nombreCategoria}"
+								th:data-codmar="${pro.id_marca_producto}"
+								th:data-nommar="${pro.nombreMarca}">
+								AGREGAR</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="row row-cols-1 row-cols-md-5 g-4">
+		<div class="col">
+			<div class="card">
+				<a th:href="@{/Facturacion/Bactrin}"> <img
+					src="https://s.cornershopapp.com/product-images/4662011.jpg"
+					class="card-img-top" alt="Bactrin">
+					<div class="card-body">
+						<h5 class="card-title">Bactrin 500MG</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<a th:href="@{/Facturacion/BioGaia}"> <img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/009640X.jpg"
+					class="card-img-top" alt="BioGaia">
+					<div class="card-body">
+						<h5 class="card-title">BioGaia Protectis 19mg/ml</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<a th:href="@{/Facturacion/Vick}"> <img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/264050X.jpg"
+					class="card-img-top" alt="Vick">
+					<div class="card-body">
+						<h5 class="card-title">Vick 44 Jarabe</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<a th:href="@{/Facturacion/Enterogermina}"> <img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/421011X.jpg"
+					class="card-img-top" alt="Enterogermina">
+					<div class="card-body">
+						<h5 class="card-title">Enterogermina</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<a th:href="@{/Facturacion/Abrilar}"> <img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/012467X.jpg"
+					class="card-img-top" alt="AbrilarEA">
+					<div class="card-body">
+						<h5 class="card-title">Abrilar EA 575</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/428242X.jpg"
+					class="card-img-top" alt="Livolin">
+				<div class="card-body">
+					<h5 class="card-title">Livolin Forte</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/132047X.jpg"
+					class="card-img-top" alt="Bismutol">
+				<div class="card-body">
+					<h5 class="card-title">Bismutol 87.335g</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/324071X.jpg"
+					class="card-img-top" alt="Vaporub">
+				<div class="card-body">
+					<h5 class="card-title">Vick Vaporub tópico</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/029509X.jpg"
+					class="card-img-top" alt="Panadol">
+				<div class="card-body">
+					<h5 class="card-title">Panadol Forte Tableta</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/024242X.jpg"
+					class="card-img-top" alt="Bicarbonato">
+				<div class="card-body">
+					<h5 class="card-title">Bicarbonato de sodio 100g</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="col">
+			<div class="card">
+				<img src="https://www.megapps.com.bo/images/prod/AciTipJarabe.png"
+					class="card-img-top" alt="Aci-Tip">
+				<div class="card-body">
+					<h5 class="card-title">Aci-Tip 800mg-60mg/10ml</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/932007X.jpg"
+					class="card-img-top" alt="Jarabe">
+				<div class="card-body">
+					<h5 class="card-title">Abrilar Jarabe</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://boticamoderna.pe/wp-content/uploads/2020/12/18110.1.jpg"
+					class="card-img-top" alt="Gaseovet">
+				<div class="card-body">
+					<h5 class="card-title">Gaseovet 80mg/ml</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/108220X.jpg"
+					class="card-img-top" alt="Panadol100">
+				<div class="card-body">
+					<h5 class="card-title">Panadol 100mg/ml</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img
+					src="https://dcuk1cxrnzjkh.cloudfront.net/imagesproducto/109005X.jpg"
+					class="card-img-top" alt="Aspirina">
+				<div class="card-body">
+					<h5 class="card-title">Aspirina 100mg Tableta</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

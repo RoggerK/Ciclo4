@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head th:insert="layout::head">
+<meta charset="UTF-8">
+</head>
+
+<script type="text/javascript" th:src="@{/js/mijs/opera.js}"></script>
+
+<body>
+	<nav th:insert="layout::menuFarma"></nav>
+
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well well-sm">
+					<form th:action="@{/Contactar/Contacto}" class="form-horizontal">
+						<fieldset>
+							<div class="mb-3">
+								<strong>Ponerse en contacto</strong>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Su dirección de correo
+									electrónico no será publicada. Los campos obligatorios están
+									marcados (*)</label>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Nombre</label> <input type="text"
+									class="form-control" id="nombre">
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Correo</label> <input type="email"
+									class="form-control" id="correo">
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Mensaje</label>
+								<textarea class="form-control" id="mensaje" rows="3"></textarea>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-12 text-center">
+									<button type="submit" class="btn btn-primary btn-lg"
+										onclick="enviar();">Enviar</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

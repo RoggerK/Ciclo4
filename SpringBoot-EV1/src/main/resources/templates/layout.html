@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head th:fragment="head">
+<meta charset="UTF-8">
+<title>FARMA</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap/bootstrap.css}">
+<script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.bundle.js}"></script>
+<body>
+	<nav th:fragment="menuFarma" class="navbar navbar-expand-lg navbar-light bg-light p-2">
+    <div class="container-fluid">
+      <p class="navbar-brand">FARMA</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse position-absolute end-0" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/Catalogo/Home}">Catalogo</a>
+          </li>
+          <br>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/Contactar/Index}">Contactar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

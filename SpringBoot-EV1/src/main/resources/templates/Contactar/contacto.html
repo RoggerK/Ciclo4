@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head th:insert="layout::head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<nav th:insert="layout::menuFarma"></nav>
+	<br>
+	<div
+		class="bg-warning position-absolute top-10 start-50 translate-middle-x d-grid gap-2 col-6 mx-auto p-2 btn-lg"
+		style="font-family: cursive;">
+		<b>
+			<div class="mb-3">
+				<label for="exampleFormControlInput1" class="form-label">NOMBRE</label>
+				<p class="bg-light btn-lg p-2" id="resNombre"></p>
+				<script>
+					document.getElementById("resNombre").innerHTML = localStorage
+							.getItem("textNombre");
+				</script>
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlInput1" class="form-label">CORREO</label>
+				<p class="bg-light btn-lg p-2" id="resCorreo"></p>
+				<script>
+					document.getElementById("resCorreo").innerHTML = localStorage
+							.getItem("textCorreo");
+				</script>
+			</div>
+			<div class="mb-3">
+				<label for="exampleFormControlTextarea1" class="form-label">MENSAJE
+					REDACTADO</label>
+				<textarea class="form-control" id="resMensaje" rows="3"
+					readonly="true"></textarea>
+				<script>
+					document.getElementById("resMensaje").value = localStorage
+							.getItem("textMensaje");
+				</script>
+			</div>
+		</b>
+	</div>
+</body>
+</html>

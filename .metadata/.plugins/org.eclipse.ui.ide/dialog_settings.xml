@@ -48,6 +48,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\IDAT\CICLO 4\PROYECTO CERTIFICADOR 2\Proy-Farmacia\EC4_DESARROLLO\app-farmacia"/>
+			<item value="D:\PROYECTO-Viaje Interprovincial\CurisincheGuiaKennedyRogger"/>
 			<item value="D:\IDAT\CICLO 4\DESARROLLO APL 2\Ejercicios\s2.1-demo02"/>
 			<item value="D:\IDAT\CICLO 3\DESARROLLO-AVANZ-APLI I\PROYECTO-Viaje Interprovincial\CurisincheGuiaKennedyRogger"/>
 		</list>

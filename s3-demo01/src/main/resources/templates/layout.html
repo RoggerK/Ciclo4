@@ -9,17 +9,28 @@
 	th:src="@{/js/bootstrap/bootstrap.bundle.js}"></script>
 </head>
 <body>
-	<nav th:fragment="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav th:fragment="menu"
+		class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<span class="navbar-brand mb-0 h1"><b>TEMA THYMELEAF<b></span>
 		</div>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-link" th:href="@{/Tema03/thymeleaf}">Inicio</a>
-				<a class="nav-link" th:href="@{/Seguridad/login}">Seguridad</a>
-				<a class="nav-link" href="#">Pricing</a>
+				<a class="nav-link" th:href="@{/Tema03/thymeleaf}">Inicio</a> <a
+					class="nav-link" th:href="@{/Seguridad/login}">Seguridad</a>
 			</div>
 		</div>
 	</nav>
+
+	<nav th:fragment="idat" class="navbar navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="https://eva.idat.edu.pe/" target="_black"> <img
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSFmMVivCBhLY2cE_h0CtqBFz-oGpgyc5U-0xjhpHF-jTQG1BdvAYGpqe4VDktympxnk&usqp=CAU"
+				alt="idat" width="62" height="62"
+				class="d-inline-block align-text-top"> IDAT
+			</a>
+		</div>
+	</nav>
+
 </body>
 </html>
